@@ -1,0 +1,70 @@
+
+FIRST TEST (NO CHANGES)
+2018-07-17T13:36:08.644717: step 1, loss 2.70243, acc 0.416667
+2018-07-17T13:36:08.729154: step 2, loss 1.44836, acc 0.722222
+2018-07-17T13:36:08.780371: step 3, loss 0.831631, acc 0.722222
+2018-07-17T13:36:08.834600: step 4, loss 0.780276, acc 0.638889
+2018-07-17T13:36:08.894865: step 5, loss 0.97322, acc 0.638889
+2018-07-17T13:36:08.956489: step 6, loss 0.754949, acc 0.75
+2018-07-17T13:36:09.007231: step 7, loss 0.949148, acc 0.75
+2018-07-17T13:36:09.065482: step 8, loss 0.449501, acc 0.833333
+2018-07-17T13:36:09.136819: step 9, loss 0.273224, acc 0.888889
+2018-07-17T13:36:09.193868: step 10, loss 0.338352, acc 0.888889
+2018-07-17T13:36:09.235944: step 11, loss 0.418469, acc 0.777778
+
+2018-07-17T13:36:20.712757: step 193, loss 0.000954469, acc 1
+2018-07-17T13:36:20.782787: step 194, loss 0.00536471, acc 1
+2018-07-17T13:36:20.849235: step 195, loss 5.42956e-05, acc 1
+2018-07-17T13:36:20.905188: step 196, loss 0.000611851, acc 1
+2018-07-17T13:36:20.965231: step 197, loss 0.00125531, acc 1
+2018-07-17T13:36:21.012226: step 198, loss 0.000584506, acc 1
+2018-07-17T13:36:21.059013: step 199, loss 0.00089569, acc 1
+2018-07-17T13:36:21.130433: step 200, loss 0.00012544, acc 1
+Evaluation:
+2018-07-17T13:36:21.133559: step 200, loss 1.14799, acc 0.25
+
+# Training parameters
+tf.flags.DEFINE_integer("batch_size", 32, "Batch Size (default: 64)")  #R1[64 -> 128]
+tf.flags.DEFINE_integer("num_epochs", 300, "Number of training epochs (default: 200)") #R1[200 -> 300]
+tf.flags.DEFINE_integer("evaluate_every", 150, "Evaluate model on dev set after this many steps (default: 100)") #R1[100 -> 150]
+tf.flags.DEFINE_integer("checkpoint_every", 50, "Save model after this many steps (default: 100)") #R1[100 -> 50]
+tf.flags.DEFINE_integer("num_checkpoints", 5, "Number of checkpoints to store (default: 5)")
+
+
+2018-07-17T12:54:46.300843: step 1, loss 1.6588, acc 0.6875
+2018-07-17T12:54:46.322355: step 2, loss 0.140649, acc 1
+2018-07-17T12:54:46.362882: step 3, loss 2.12777, acc 0.40625
+2018-07-17T12:54:46.377172: step 4, loss 1.89853, acc 0.75
+2018-07-17T12:54:46.428996: step 5, loss 1.03056, acc 0.625
+2018-07-17T12:54:46.441897: step 6, loss 0.527287, acc 0.75
+2018-07-17T12:54:46.488719: step 7, loss 1.56573, acc 0.5625
+2018-07-17T12:54:46.503852: step 8, loss 0.190726, acc 1
+2018-07-17T12:54:46.563457: step 9, loss 0.918405, acc 0.8125
+2018-07-17T12:54:46.578371: step 10, loss 1.87653, acc 0.75
+2018-07-17T12:54:46.629742: step 11, loss 0.399403, acc 0.8125
+2018-07-17T12:54:46.642618: step 12, loss 1.30089, acc 0.75
+2018-07-17T12:54:46.681116: step 13, loss 0.553071, acc 0.78125
+2018-07-17T12:54:46.692606: step 14, loss 0.341966, acc 0.
+
+
+
+2018-07-17T12:55:08.287804: step 589, loss 0.000464973, acc 1
+2018-07-17T12:55:08.299298: step 590, loss 1.07585e-05, acc 1
+2018-07-17T12:55:08.370171: step 591, loss 2.62118e-05, acc 1
+2018-07-17T12:55:08.394452: step 592, loss 0.00173582, acc 1
+2018-07-17T12:55:08.463699: step 593, loss 8.29263e-05, acc 1
+2018-07-17T12:55:08.479860: step 594, loss 2.59279e-06, acc 1
+2018-07-17T12:55:08.523037: step 595, loss 3.74915e-05, acc 1
+2018-07-17T12:55:08.537434: step 596, loss 1.43051e-06, acc 1
+2018-07-17T12:55:08.582840: step 597, loss 0.000343113, acc 1
+2018-07-17T12:55:08.597837: step 598, loss 2.44378e-06, acc 1
+2018-07-17T12:55:08.647890: step 599, loss 0.00256085, acc 1
+2018-07-17T12:55:08.662904: step 600, loss 4.97695e-06, acc 1
+
+Evaluation:
+2018-07-17T12:55:08.665893: step 600, loss 0.951732, acc 0.5
+
+Saved model checkpoint to /Users/marcpepperman/Desktop/DeepLearning_ICP_CS490/DeepLearning_Lesson5/runs/1531850085/checkpoints/model-600
+
+
+Process finished with exit code 0
